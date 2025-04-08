@@ -3,49 +3,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #F2F2F2; /* 薄いグレーで落ち着いた背景 */
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* 上揃えに変更 */
+    align-items: flex-start;
     min-height: 100vh;
     text-align: center;
-    flex-direction: column; /* 縦並びに修正 */
-}
-
-/* セクションのレイアウト */
-.section {
-    padding: 40px;
-    margin: 20px 0;
-    background-color: white;
-    border-radius: 8px;
-    width: 80%; /* セクションの幅を80%に調整 */
-    max-width: 1200px; /* 最大幅を設定 */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left; /* テキストを左揃え */
-}
-
-h2, h3 {
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 600px; /* リスト項目が広がりすぎないように */
-}
-
-ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
+    flex-direction: column;
 }
 
 /* ヒーローセクション */
 .hero {
-    background-color: #007bff;
+    background-color: #327337; /* ダークグリーン */
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -67,17 +37,53 @@ ul li {
 /* CTAボタン */
 .cta-button {
     display: inline-block;
-    background-color: #28a745;
+    background-color: #77D986; /* 明るいグリーン */
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 18px;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #218838;
+    background-color: #A0D9A9; /* 少し明るめのグリーン */
+}
+
+/* セクション */
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #FFFFFF; /* セクションの背景色を白 */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* セクションのヘッダー */
+h2, h3 {
+    color: #327337; /* ダークグリーン */
+    text-align: center;
+    font-size: 30px;
+}
+
+/* サービスリスト */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 /* ステップごとのレイアウト */
@@ -107,12 +113,17 @@ table th, table td {
 }
 
 table th {
-    background-color: #f4f4f4;
+    background-color: #A5A4A6; /* グレーで安定感 */
+    color: white;
+}
+
+table td {
+    background-color: #F2F2F2; /* 薄いグレー */
 }
 
 /* フッター */
 footer {
-    background-color: #333;
+    background-color: #327337; /* ダークグリーン */
     color: white;
     text-align: center;
     padding: 20px;
