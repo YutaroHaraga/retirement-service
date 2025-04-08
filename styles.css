@@ -1,87 +1,49 @@
-/* 全体的なスタイル */
+/* 基本的なスタイル */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h1, h2 {
     color: #333;
-}
-
-/* ヘッダーのスタイル */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-header p {
-    margin: 10px 0 0;
-}
-
-/* セクションのスタイル */
-main section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-main h2 {
-    font-size: 28px;
-    color: #4CAF50;
-}
-
-/* リストのスタイル */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-/* よくある質問のスタイル */
-dl {
-    font-size: 16px;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd {
-    margin-left: 20px;
-}
-
-/* フッターのスタイル */
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
 }
 
 /* リンクのスタイル */
 a {
-    color: #4CAF50;
     text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+    header, main, footer {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, ul {
+        font-size: 14px;
+    }
 }
