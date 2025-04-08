@@ -7,9 +7,10 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* 上揃えに変更 */
     min-height: 100vh;
     text-align: center;
+    flex-direction: column; /* 縦並びに修正 */
 }
 
 /* セクションのレイアウト */
