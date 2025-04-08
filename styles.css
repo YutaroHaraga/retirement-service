@@ -21,6 +21,9 @@ body {
     border-radius: 8px;
     width: 80%; /* セクションの幅を80%に調整 */
     max-width: 1200px; /* 最大幅を設定 */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* テキストを左揃え */
 }
 
 h2, h3 {
