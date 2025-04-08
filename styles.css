@@ -1,26 +1,27 @@
-/* ページ全体に背景色を適用 */
+/* ページ全体の基本設定 */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* 背景色 */
-    font-family: Arial, sans-serif; /* フォント */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* 基本文字色 */
 }
 
-/* ヘッダー、メイン、フッターセクションの共通スタイル */
+/* ヘッダー、メイン、フッターに共通のスタイル */
 header, main, footer {
     margin: 0 auto;
     padding: 20px;
     width: 80%;
     max-width: 1200px;
     background-color: #ffffff; /* 白背景 */
-    border-radius: 8px; /* 丸みを帯びた角 */
+    border-radius: 8px; /* 角を丸く */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
 }
 
 /* ヘッダー */
 header {
-    background-color: #007BFF; /* 青色 */
+    background-color: #007BFF; /* 安心感を与える青色 */
     color: white;
     text-align: center;
     border-radius: 8px 8px 0 0; /* 上部のみ丸みをつける */
@@ -29,10 +30,12 @@ header {
 header h1 {
     font-size: 36px;
     margin: 0;
+    line-height: 1.2;
+    word-wrap: break-word; /* モバイルでも折り返し */
 }
 
 header p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* メインコンテンツ */
@@ -42,13 +45,16 @@ main {
 
 h2 {
     color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
+/* 概要テキスト */
 p, ul, dl {
     font-size: 16px;
     color: #555;
+    line-height: 1.6;
 }
 
 /* リストスタイル */
@@ -72,15 +78,15 @@ dl dd {
     margin-bottom: 10px;
 }
 
-/* リンクのスタイル */
+/* お問い合わせリンクのスタイル */
 a {
-    color: #007BFF; /* 青色 */
+    color: #007BFF; /* リンクは青 */
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #0056b3; /* ホバー時に少し暗く */
+    color: #0056b3; /* ホバー時に暗く */
 }
 
 /* フッター */
@@ -101,11 +107,12 @@ footer {
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 26px;
+        word-wrap: break-word; /* モバイルで文字が折れないように */
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     p, ul, dl {
