@@ -1,72 +1,128 @@
 /* 基本的なスタイル */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-header, main, footer {
-    margin: 0 auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 1200px;
+/* ヘッダー */
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    text-align: center;
 }
 
-/* 見出しのスタイル */
-h1, h2 {
-    color: #004a99; /* 深い青色 */
-    font-weight: 700;
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-/* リストスタイル */
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* セクション */
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-li {
-    font-size: 16px;
-    margin-bottom: 8px;
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-/* リンクのスタイル */
-a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: 500;
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-a:hover {
-    color: #0056b3;
+.step {
+    width: 48%;
+    margin-bottom: 20px;
 }
 
-/* フッター */
-footer {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    padding: 20px 0;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
     background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 /* モバイル対応 */
 @media (max-width: 600px) {
-    header, main, footer {
-        width: 90%;
-        padding: 15px;
-    }
-
-    h1 {
+    .hero h1 {
         font-size: 24px;
     }
 
-    h2 {
-        font-size: 20px;
+    .hero p {
+        font-size: 16px;
     }
 
-    p, ul {
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+
+    footer {
         font-size: 14px;
     }
 }
