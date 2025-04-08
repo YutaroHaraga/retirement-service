@@ -5,14 +5,49 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
-/* ヘッダー */
+/* セクションのレイアウト */
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    width: 80%; /* セクションの幅を80%に調整 */
+    max-width: 1200px; /* 最大幅を設定 */
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px; /* リスト項目が広がりすぎないように */
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* ヒーローセクション */
 .hero {
     background-color: #007bff;
     color: white;
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -25,6 +60,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* CTAボタン */
 .cta-button {
     display: inline-block;
     background-color: #28a745;
@@ -33,39 +69,18 @@ body {
     font-size: 18px;
     border-radius: 5px;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 .cta-button:hover {
     background-color: #218838;
 }
 
-/* セクション */
-.section {
-    padding: 40px;
-    margin: 20px 0;
-    background-color: white;
-    border-radius: 8px;
-}
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
+/* ステップごとのレイアウト */
 .steps {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .step {
@@ -73,9 +88,12 @@ ul li {
     margin-bottom: 20px;
 }
 
+/* 料金プランのテーブル */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 table th, table td {
@@ -88,11 +106,14 @@ table th {
     background-color: #f4f4f4;
 }
 
+/* フッター */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* モバイル対応 */
