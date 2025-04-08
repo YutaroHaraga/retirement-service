@@ -1,38 +1,41 @@
-/* styles.css */
-
-/* 全体のスタイル */
+/* 全体的なスタイル */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-/* ヘッダー */
+/* ヘッダーのスタイル */
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
-/* メインコンテンツ */
-main {
-    padding: 20px;
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+/* セクションのスタイル */
+main section {
     margin: 20px;
+    padding: 20px;
     background-color: white;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* セクション */
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: #333;
+main h2 {
+    font-size: 28px;
+    color: #4CAF50;
 }
 
 /* リストのスタイル */
@@ -41,43 +44,44 @@ ul {
     padding-left: 0;
 }
 
-li {
-    background-color: #f9f9f9;
+ul li {
+    margin: 10px 0;
+}
+
+/* よくある質問のスタイル */
+dl {
+    font-size: 16px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* リンクのスタイル */
 a {
-    color: #008CBA;
+    color: #4CAF50;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* フッター */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    main {
-        margin: 0;
-    }
 }
