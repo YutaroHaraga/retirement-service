@@ -1,125 +1,128 @@
-/* ページ全体の基本設定 */
-html, body {
-    height: 100%;
+/* 基本的なスタイル */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* 背景色 */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333; /* 基本文字色 */
-}
-
-/* ヘッダー、メイン、フッターに共通のスタイル */
-header, main, footer {
-    margin: 0 auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 1200px;
-    background-color: #ffffff; /* 白背景 */
-    border-radius: 8px; /* 角を丸く */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* ヘッダー */
-header {
-    background-color: #007BFF; /* 安心感を与える青色 */
+.hero {
+    background-color: #007bff;
     color: white;
+    padding: 40px;
     text-align: center;
-    border-radius: 8px 8px 0 0; /* 上部のみ丸みをつける */
 }
 
-header h1 {
+.hero h1 {
     font-size: 36px;
-    margin: 0;
-    line-height: 1.2;
-    word-wrap: break-word; /* モバイルでも折り返し */
+    margin-bottom: 10px;
 }
 
-header p {
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
     font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-/* メインコンテンツ */
-main {
-    padding-top: 20px;
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* セクション */
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
 }
 
 h2 {
-    color: #333;
     font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* 概要テキスト */
-p, ul, dl {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* リストスタイル */
 ul {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
 }
 
-li {
+ul li {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-/* よくある質問のスタイル */
-dl dt {
-    font-weight: bold;
-    margin-top: 10px;
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-dl dd {
-    margin-left: 20px;
-    margin-bottom: 10px;
+.step {
+    width: 48%;
+    margin-bottom: 20px;
 }
 
-/* お問い合わせリンクのスタイル */
-a {
-    color: #007BFF; /* リンクは青 */
-    text-decoration: none;
-    font-weight: bold;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-a:hover {
-    color: #0056b3; /* ホバー時に暗く */
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
-/* フッター */
+table th {
+    background-color: #f4f4f4;
+}
+
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    font-size: 14px;
-    color: #888;
-    padding: 10px 0;
-    background-color: #f0f0f0;
-    border-radius: 0 0 8px 8px; /* 下部のみ丸みをつける */
+    padding: 20px;
 }
 
 /* モバイル対応 */
 @media (max-width: 600px) {
-    header, main, footer {
-        width: 90%;
-        padding: 15px;
+    .hero h1 {
+        font-size: 24px;
     }
 
-    h1 {
-        font-size: 26px;
-        word-wrap: break-word; /* モバイルで文字が折れないように */
+    .hero p {
+        font-size: 16px;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
-    p, ul, dl {
+    table th, table td {
         font-size: 14px;
     }
 
-    footer p {
-        font-size: 12px;
+    footer {
+        font-size: 14px;
     }
 }
